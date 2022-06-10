@@ -1,0 +1,148 @@
+.footer {
+  background-color: var(--pouring);
+
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-box {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-contacts {
+  margin-right: 70px;
+}
+
+.logo.futter {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.location {
+  color: var(--primeri-white-color);
+
+  display: inline-block;
+  margin-bottom: 9px;
+}
+
+.adress {
+  font-style: normal;
+}
+
+.transparent {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--tranparanted);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--accent);
+  }
+}
+
+.mail {
+  margin-bottom: 9px;
+}
+
+.footer-logo {
+  color: var(--primeri-white-color);
+}
+
+.footer-link {
+  margin-right: auto;
+}
+
+.join {
+  color: var(--primeri-white-color);
+  display: block;
+
+  margin-bottom: 20px;
+
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.join-network {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 10px;
+}
+
+.join-network-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  border-radius: 50%;
+  fill: var(--primeri-white-color);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent);
+  }
+}
+
+.futter-form-text {
+  display: block;
+}
+
+.futter-form {
+  display: flex;
+  position: relative;
+}
+
+.button-form-input {
+  width: 358px;
+  height: 50px;
+
+  margin-right: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+  outline: transparent;
+  padding-left: 16px;
+  color: var(--primeri-white-color);
+  transition: border 700ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus-visible {
+    border: 1px solid var(--primeri-white-color);
+  }
+}
+
+.futter-form-button {
+  width: 200px;
+  height: 50px;
+  background-color: var(--accent);
+  color: var(--primeri-white-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: transparent;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+
+  text-align: left;
+  padding-left: 29px;
+}
+
+.futter-send-icon {
+  position: absolute;
+  top: 13px;
+  right: 28px;
+  fill: var(--primeri-white-color);
+}
