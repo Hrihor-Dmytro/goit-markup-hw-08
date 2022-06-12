@@ -1,10 +1,12 @@
 .comand {
   background-color: var(--optional-bt-color);
 }
+
 .comand-box {
   display: flex;
   flex-wrap: wrap;
 }
+
 .example-cards {
   background-color: var(--primeri-white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
