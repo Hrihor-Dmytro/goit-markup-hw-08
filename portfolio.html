@@ -25,20 +25,38 @@
     <!-- основная навигация сайта -->
     <header class="header">
       <div class="my-nav container">
-        <nav class="my-nav">
+        <nav class="my-nav my__nav--mobile">
           <a href="index.html" class="my-nav__logo logo" lang="en">
             Web<span class="my-nav__logo--accent">Studio</span></a
           >
+          <button
+            data-menu-button
+            class="mobile__navigation--button is-open"
+            type="button"
+            aria-label="кнопка открытия мобильного меню"
+            aria-controls="meny-box"
+          >
+            <svg class="mobile__navigation--icon" width="40" height="40">
+              <use
+                class="cross-open"
+                href="./images/symbol-defs.svg#icon-mb_close"
+              ></use>
+              <use
+                class="cross-close"
+                href="./images/symbol-defs.svg#icon-mb_open"
+              ></use>
+            </svg>
+          </button>
           <ul class="site-nav list">
             <li class="site-nav__item">
-              <a href="./index.html" class="site-nav__item--link link"
+              <a
+                href="./index.html"
+                class="site-nav__item--link site-nav__item link"
                 >Студия</a
               >
             </li>
             <li class="site-nav__item">
-              <a
-                href="./portfolio.html"
-                class="site-nav__item--link site-nav__item--current link"
+              <a href="./portfolio.html" class="site-nav__item--link link site-nav__item--current"
                 >Портфолио</a
               >
             </li>
@@ -75,6 +93,38 @@
             >
           </li>
         </ul>
+        <!-- навигация мобильного меню -->
+        <div
+        data-menu
+        id="meny-box"
+          class="mobile-navigation">
+          <ul class="mobile-navigation__box list">
+            <li class="site__mb"><a
+                href="./index.html"
+                class="site__mb--link"
+                >Студия</a>
+               </li>
+            <li class="site__mb"><a href="./portfolio.html" class="site__mb--link current"
+                >Портфолио</a
+              ></li>
+            <li class="site__mb blok"><a href="" class="site__mb--link">Контакты</a></li>
+            <li class="auth__mb"><a href="tel:+380961111111" class="auth__mb--tel">
+               +38 096 111 11 11</a
+            ></li>
+            <li class="auth__mb"><a
+              href="mailto:info@devstudio.com"
+              class="auth__mb--mail"> </a>
+              info@devstudio.com</a
+            ></li>
+          </ul>
+          <ul class="social__mob list">
+            <li class="social_mob--link"><a href=""></a> Twitter</li>
+            <li class="social_mob--link"><a href=""></a> Facebook</li>
+            <li class="social_mob--link"><a href=""></a> LinkedIn</li>
+            <li class="social_mob--link"><a href=""></a> Instagram</li>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <!-- мой контент -->
@@ -412,5 +462,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/mob-meny.js"></script>
   </body>
 </html>
