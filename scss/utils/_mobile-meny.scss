@@ -1,5 +1,21 @@
+.my-nav.container {
+  position: relative;
+}
+
 .mobile-navigation {
-  //  display: none;
+  display: none;
+
+  position: absolute;
+  width: 100%;
+  top: 50px;
+  height: 300px;
+  left: 0;
+
+  padding: 15px;
+  background-color: tomato;
+  &.is-open {
+    display: block;
+  }
 }
 
 .social__mob {
@@ -10,4 +26,26 @@
 .social_mob--link::after {
   width: 22px;
   height: 4px;
+}
+
+// кнопка открытия-закрытия моб меню
+
+.mobile__navigation--button {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+  background-color: #fff;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+.mobile__navigation--button .cross-close {
+  display: none;
+}
+
+.mobile__navigation--button.is-open .cross-close {
+  display: block;
+}
+.mobile__navigation--button.is-open .cross-open {
+  display: none;
 }
