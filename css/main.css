@@ -129,6 +129,11 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+  .my-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
   .site-nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1228,5 +1233,22 @@ body {
 .list-filter:focus .card-box-text {
   -webkit-transform: translateY(0);
           transform: translateY(0);
+}
+
+.social__mob {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.social_mob--link::after {
+  width: 22px;
+  height: 4px;
 }
 /*# sourceMappingURL=main.css.map */

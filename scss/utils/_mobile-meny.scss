@@ -1,0 +1,13 @@
+.mobile-navigation {
+  //  display: none;
+}
+
+.social__mob {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.social_mob--link::after {
+  width: 22px;
+  height: 4px;
+}
