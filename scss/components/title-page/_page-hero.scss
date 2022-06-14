@@ -1,45 +1,24 @@
 .hero {
-  @media screen and (min-width: 1200px) {
-    margin-right: auto;
-    margin-left: auto;
-    max-width: 1600px;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../galerry/Header_phone_hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
 
-    text-align: center;
-
-    padding-top: 200px;
-    padding-bottom: 200px;
-
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../galerry/Img@2x_dt_hero.jpg);
+      url(../galerry/Header_img@2x_phone_hero.jpg);
     background-repeat: no-repeat;
     background-position: center;
   }
-
-  @media screen and (max-width: 1200px) {
-    background-image: linear-gradient(
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url(../galerry/Img_dt_hero.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: linear-gradient(
-          rgba(47, 48, 58, 0.4),
-          rgba(47, 48, 58, 0.4)
-        ),
-        url(../galerry/Img@2x_dt_hero.jpg);
-      background-repeat: no-repeat;
-      background-position: center;
-    }
-  }
-
-  @media screen and (max-width: 768px) {
+  @media screen and (min-width: 480px) {
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
@@ -60,16 +39,14 @@
       background-position: center;
     }
   }
-
-  @media screen and (max-width: 480px) {
+  @media screen and (min-width: 768px) {
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../galerry/Header_phone_hero.jpg);
+      url(../galerry/Img_dt_hero.jpg);
     background-repeat: no-repeat;
     background-position: center;
-
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
@@ -77,10 +54,28 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(../galerry/Header_img@2x_phone_hero.jpg);
+        url(../galerry/Img@2x_dt_hero.jpg);
       background-repeat: no-repeat;
       background-position: center;
     }
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1600px;
+
+    text-align: center;
+
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../galerry/Img@2x_dt_hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }
 
