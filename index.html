@@ -94,40 +94,40 @@
           </li>
         </ul>
         <!-- навигация мобильного меню -->
-        <div
-          data-menu
-          id="meny-box"
-          class="mobile-navigation">
+        <div data-menu id="meny-box" class="mobile-navigation">
           <ul class="mobile-navigation__box list">
             <li class="site__mb">
-              <a
-                href="./index.html"
-                class="site__mb--link current"
-                >Студия</a>
-               </li>
+              <a href="./index.html" class="site__mb--link current">Студия</a>
+            </li>
             <li class="site__mb">
-              <a href="./portfolio.html" class="site__mb--link"
-                >Портфолио</a
-              ></li>
+              <a href="./portfolio.html" class="site__mb--link">Портфолио</a>
+            </li>
             <li class="site__mb blok">
-                <a href="" class="site__mb--link">
-                Контакты</a>
-              </li>
+              <a href="" class="site__mb--link"> Контакты</a>
+            </li>
             <li class="auth__mb">
               <a href="tel:+380961111111" class="auth__mb--tel">
-               +38 096 111 11 11</a
-            ></li>
+                +38 096 111 11 11</a
+              >
+            </li>
             <li class="auth__mb">
-              <a
-              href="mailto:info@devstudio.com"
-              class="auth__mb--mail">info@devstudio.com </a>
-              </li>
+              <a href="mailto:info@devstudio.com" class="auth__mb--mail"
+                >info@devstudio.com
+              </a>
+            </li>
           </ul>
           <ul class="social__mob list">
-            <li class="social_mob"><a class="social_mob--link" href=" ">Twitter</a> </li>
-            <li class="social_mob"><a class="social_mob--link" href=" ">Facebook</a> </li>
-            <li class="social_mob"><a class="social_mob--link" href=" ">LinkedIn</a> </li>
-            <li class="social_mob"><a class="social_mob--link" href=" ">Instagram</a> </li>
+            <li class="social_mob">
+              <a class="social_mob--link" href=" ">Twitter</a>
+            </li>
+            <li class="social_mob">
+              <a class="social_mob--link" href=" ">Facebook</a>
+            </li>
+            <li class="social_mob">
+              <a class="social_mob--link" href=" ">LinkedIn</a>
+            </li>
+            <li class="social_mob">
+              <a class="social_mob--link" href=" ">Instagram</a>
             </li>
           </ul>
         </div>
@@ -223,10 +223,10 @@
           <ul class="examples-finished list">
             <li class="exemple-list">
               <img
-              srcset="
-                      ./galerry/exemples/exemple_1img.jpg 1x,
-                      ./galerry/exemples/exemple_1img@2x.jpg 2x,
-                    "
+                srcset="
+                  ./galerry/exemples/exemple_1img.jpg    1x,
+                  ./galerry/exemples/exemple_1img@2x.jpg 2x
+                "
                 src="./images/img1.jpg"
                 alt="Разработка програмного обеспечения"
                 width="370"
@@ -237,24 +237,25 @@
             </li>
             <li class="exemple-list">
               <img
-              srcset="
-                      ./galerry/exemples/exemple_2img.jpg 1x,
-                      ./galerry/exemples/exemple_2img@2x.jpg 2x,
-                    "
+                srcset="
+                  ./galerry/exemples/exemple_2img.jpg    1x,
+                  ./galerry/exemples/exemple_2img@2x.jpg 2x
+                "
                 src="./images/img2.jpg"
                 alt="Тестирование мобильного приложения"
                 width="370"
                 height="294"
                 loading="lazy"
               />
+
               <p class="examples-text">Мобильные приложения</p>
             </li>
             <li class="exemple-list">
               <img
-              srcset="
-                      ./galerry/exemples/exemple_3img.jpg 1x,
-                      ./galerry/exemples/exemple_3img@2x.jpg 2x,
-                    "
+                srcset="
+                  ./galerry/exemples/exemple_3img.jpg    1x,
+                  ./galerry/exemples/exemple_3img@2x.jpg 2x
+                "
                 src="./images/img3.jpg"
                 alt="Работа с изображениями"
                 width="370"
@@ -274,35 +275,35 @@
             <li class="example-cards">
               <picture>
                 <source
-                media="(min-width: 1200px)"
-                srcset="
-                  ./galerry/comand/img1_dt.jpg    1x,
-                  ./galerry/comand/img@2x1_dt.jpg 2x
-                "
-                type="image/jpg"
-                />       
-                <source
-                media="(min-width: 768px)"
-                srcset="
-                  ./galerry/comand/img1_tb.jpg    1x,
-                  ./galerry/comand/img@2x1_tb.jpg 2x
-                "
-                type="image/jpg"
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./galerry/comand/img1_dt.jpg    1x,
+                    ./galerry/comand/img@2x1_dt.jpg 2x
+                  "
+                  type="image/jpg"
                 />
                 <source
-                media="(max-width: 767px)"
-                srcset="
-                  ./galerry/comand/img1_mb.jpg    1x,
-                  ./galerry/comand/img@2x1_mb.jpg 2x
-                "
-                type="image/jpg"
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./galerry/comand/img1_tb.jpg    1x,
+                    ./galerry/comand/img@2x1_tb.jpg 2x
+                  "
+                  type="image/jpg"
                 />
-              
-                <img class="comand__img"
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./galerry/comand/img1_mb.jpg    1x,
+                    ./galerry/comand/img@2x1_mb.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <img
+                  class="comand__img"
                   src="./images/img4.jpg"
                   alt="Product Designer"
                   width="270"
-                  
                 />
               </picture>
               <p class="comand-name">Игорь Демьяненко</p>
@@ -363,36 +364,37 @@
               </ul>
             </li>
             <li class="example-cards">
-                <picture>
+              <picture>
                 <source
-                media="(min-width: 1200px)"
-                srcset="
-                  ./galerry/comand/img2_dt.jpg    1x,
-                  ./galerry/comand/img@2x2_dt.jpg 2x
-                "
-                type="image/jpg"
-                />       
-                <source
-                media="(min-width: 768px)"
-                srcset="
-                  ./galerry/comand/img2_tb.jpg    1x,
-                  ./galerry/comand/img@2x2_tb.jpg 2x
-                "
-                type="image/jpg"
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./galerry/comand/img2_dt.jpg    1x,
+                    ./galerry/comand/img@2x2_dt.jpg 2x
+                  "
+                  type="image/jpg"
                 />
                 <source
-                media="(max-width: 767px)"
-                srcset="
-                  ./galerry/comand/img2_mb.jpg    1x,
-                  ./galerry/comand/img@2x2_mb.jpg 2x
-                "
-                type="image/jpg"
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./galerry/comand/img2_tb.jpg    1x,
+                    ./galerry/comand/img@2x2_tb.jpg 2x
+                  "
+                  type="image/jpg"
                 />
-              <img class="comand__img"
-                src="./images/img5.jpg"
-                alt="Frontend Developer"
-                width="370"
-              />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./galerry/comand/img2_mb.jpg    1x,
+                    ./galerry/comand/img@2x2_mb.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  class="comand__img"
+                  src="./images/img5.jpg"
+                  alt="Frontend Developer"
+                  width="370"
+                />
               </picture>
               <p class="comand-name">Ольга Репина</p>
               <p lang="en" class="comand-text">Frontend Developer</p>
@@ -454,34 +456,36 @@
             <li class="example-cards">
               <picture>
                 <source
-                media="(min-width: 1200px)"
-                srcset="
-                  ./galerry/comand/img3_dt.jpg    1x,
-                  ./galerry/comand/img@2x3_dt.jpg 2x
-                "
-                type="image/jpg"
-                />       
-                <source
-                media="(min-width: 768px)"
-                srcset="
-                  ./galerry/comand/img3_tb.jpg    1x,
-                  ./galerry/comand/img@2x3_tb.jpg 2x
-                "
-                type="image/jpg"
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./galerry/comand/img3_dt.jpg    1x,
+                    ./galerry/comand/img@2x3_dt.jpg 2x
+                  "
+                  type="image/jpg"
                 />
                 <source
-                media="(max-width: 767px)"
-                srcset="
-                  ./galerry/comand/img3_mb.jpg    1x,
-                  ./galerry/comand/img@2x3_mb.jpg 2x
-                "
-                type="image/jpg"
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./galerry/comand/img3_tb.jpg    1x,
+                    ./galerry/comand/img@2x3_tb.jpg 2x
+                  "
+                  type="image/jpg"
                 />
-                
-              <img class="comand__img" 
-                src="./images/img6.jpg" 
-                alt="Marketing" 
-                width="370"/>
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./galerry/comand/img3_mb.jpg    1x,
+                    ./galerry/comand/img@2x3_mb.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <img
+                  class="comand__img"
+                  src="./images/img6.jpg"
+                  alt="Marketing"
+                  width="370"
+                />
               </picture>
               <p class="comand-name">Николай Тарасов</p>
               <p lang="en" class="comand-text">Marketing</p>
@@ -543,35 +547,36 @@
             <li class="example-cards">
               <picture>
                 <source
-                media="(min-width: 1200px)"
-                srcset="
-                  ./galerry/comand/img4_dt.jpg    1x,
-                  ./galerry/comand/img@2x4_dt.jpg 2x
-                "
-                type="image/jpg"
-                />       
-                <source
-                media="(min-width: 768px)"
-                srcset="
-                  ./galerry/comand/img4_tb.jpg    1x,
-                  ./galerry/comand/img@2x4_tb.jpg 2x
-                "
-                type="image/jpg"
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./galerry/comand/img4_dt.jpg    1x,
+                    ./galerry/comand/img@2x4_dt.jpg 2x
+                  "
+                  type="image/jpg"
                 />
                 <source
-                media="(max-width: 767px)"
-                srcset="
-                  ./galerry/comand/img4_mb.jpg    1x,
-                  ./galerry/comand/img@2x4_mb.jpg 2x
-                "
-                type="image/jpg"
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./galerry/comand/img4_tb.jpg    1x,
+                    ./galerry/comand/img@2x4_tb.jpg 2x
+                  "
+                  type="image/jpg"
                 />
-                
-              <img class="comand__img"
-                src="./images/img7.jpg"
-                alt="UI Designer"
-                width="370"
-              />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./galerry/comand/img4_mb.jpg    1x,
+                    ./galerry/comand/img@2x4_mb.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <img
+                  class="comand__img"
+                  src="./images/img7.jpg"
+                  alt="UI Designer"
+                  width="370"
+                />
               </picture>
               <p class="comand-name">Михаил Ермаков</p>
               <p lang="en" class="comand-text">UI Designer</p>
