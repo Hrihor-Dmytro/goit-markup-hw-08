@@ -6,15 +6,13 @@
     url(../galerry/Header_phone_hero.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: linear-gradient(
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url(../galerry/Header_img@2x_phone_hero.jpg);
+    background-image: url(../galerry/Header_img@2x_phone_hero.jpg),
+      linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
     background-repeat: no-repeat;
     background-position: center;
   }
