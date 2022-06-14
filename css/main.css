@@ -970,6 +970,7 @@ body.modal-open {
   opacity: 1;
   -webkit-transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  overflow-y: auto;
 }
 
 @media screen and (min-width: 480px) {
@@ -989,7 +990,6 @@ body.modal-open {
   background-color: #fff;
   border-radius: 4px;
   padding: 40px;
-  overflow-y: scroll;
 }
 
 @media screen and (min-width: 480px) {
@@ -1412,13 +1412,18 @@ body.modal-open {
 }
 
 .mobile-navigation {
-  display: none;
   position: absolute;
   width: 100%;
   top: 65px;
   left: 0;
   padding: 15px;
   background-color: #fff;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: -webkit-transform 500ms linear;
+  transition: -webkit-transform 500ms linear;
+  transition: transform 500ms linear;
+  transition: transform 500ms linear, -webkit-transform 500ms linear;
 }
 
 @media screen and (min-width: 768px) {
@@ -1432,6 +1437,11 @@ body.modal-open {
     display: block;
     z-index: 1;
   }
+}
+
+.mobile-navigation.is-open {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 .site__mb {
@@ -1469,14 +1479,25 @@ body.modal-open {
           align-items: center;
 }
 
-.social_mob--link {
+.social_mob {
   padding-right: 10px;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
-.social_mob--link:last-child {
+.social_mob:last-child {
   padding-right: 0;
   border: none;
+}
+
+.social_mob--link {
+  text-decoration: none;
+  color: var(--title-text-color);
+}
+
+.social_mob--link:hover, .social_mob--link:focus {
+  color: var(--accent);
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media screen and (max-width: 768px) {
@@ -1490,18 +1511,31 @@ body.modal-open {
   color: var(--accent);
 }
 
+.site__mb--link:hover, .site__mb--link:focus {
+  color: var(--accent);
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .auth__mb--mail {
   font-weight: 500;
   font-size: 24px;
   line-height: 28px;
   letter-spacing: 0.02em;
+  text-decoration: none;
+  color: var(--primery-text-color);
+}
+
+.auth__mb--mail:hover, .auth__mb--mail:focus {
+  color: var(--accent);
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .auth__mb--tel {
   font-weight: 500;
   font-size: 34px;
   line-height: 1.8;
-  letter-spacing: 0.02em;
   text-decoration: none;
   color: #2196f3;
 }
