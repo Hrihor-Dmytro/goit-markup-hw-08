@@ -34,22 +34,25 @@ body.modal-open {
 
 .modal {
   position: relative;
-  @media screen and (min-width: 480px) {
-    position: absolute;
-
-    top: 50%;
-    left: 50%;
-
-    width: 528px;
-
-    transform: translate(-50%, -50%) scale(1);
-    transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
 
   background-color: #fff;
   border-radius: 4px;
 
   padding: 40px;
+
+  @media screen and (min-width: 480px) {
+    width: 528px;
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  @media screen and (min-width: 480px) and (max-width: 1200px) {
+    width: 450px;
+  }
 }
 
 .hero-bt-close {
@@ -71,7 +74,7 @@ body.modal-open {
     transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
-  :focus {
+  &:focus {
     cursor: pointer;
     fill: var(--accent);
     transform: scale(1.4) rotate(180deg);

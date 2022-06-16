@@ -16,6 +16,11 @@
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: center;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+
+  @media screen and (max-width: 768px) {
     margin-bottom: 60px;
   }
 }
@@ -25,13 +30,13 @@
 }
 
 .footer-contacts {
-  @media screen and (min-width: 768px) {
-    margin-right: 165px;
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    margin-bottom: 60px;
   }
 
   @media screen and (min-width: 1200px) {
     margin-right: 70px;
-    margin-bottom: 60px;
+    // margin-bottom: 60px;
   }
   @media screen and (max-width: 768px) {
     margin-bottom: 60px;
@@ -81,12 +86,6 @@
   color: var(--primeri-white-color);
 }
 
-.footer-link {
-  @media screen and (max-width: 768px) {
-    margin-bottom: 60px;
-  }
-}
-
 .join {
   color: var(--primeri-white-color);
   display: block;
@@ -129,6 +128,7 @@
     background-color: var(--accent);
   }
 }
+
 // форма футтера
 
 .futter-form-text {
@@ -141,6 +141,7 @@
     position: relative;
   }
 }
+
 .futter-label {
   display: block;
   margin-bottom: 20px;
