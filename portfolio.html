@@ -30,17 +30,12 @@
             Web<span class="my-nav__logo--accent">Studio</span></a
           >
           <button
-            data-menu-button
-            class="mobile__navigation--button is-open"
+            class="mobile__navigation--button-open js-open-menu"
             type="button"
             aria-label="кнопка открытия мобильного меню"
             aria-controls="meny-box"
           >
             <svg class="mobile__navigation--icon" width="40" height="40">
-              <use
-                class="cross-open"
-                href="./images/symbol-defs.svg#icon-mb_close"
-              ></use>
               <use
                 class="cross-close"
                 href="./images/symbol-defs.svg#icon-mb_open"
@@ -49,9 +44,7 @@
           </button>
           <ul class="site-nav list">
             <li class="site-nav__item">
-              <a
-                href="./index.html"
-                class="site-nav__item--link site-nav__item link"
+              <a href="./index.html" class="site-nav__item--link link"
                 >Студия</a
               >
             </li>
@@ -98,46 +91,59 @@
             >
           </li>
         </ul>
-        <!-- навигация мобильного меню -->
-        <div data-menu id="meny-box" class="mobile-navigation">
-          <ul class="mobile-navigation__box list">
-            <li class="site__mb">
-              <a href="./index.html" class="site__mb--link">Студия</a>
-            </li>
-            <li class="site__mb">
-              <a href="./portfolio.html" class="site__mb--link current"
-                >Портфолио</a
-              >
-            </li>
-            <li class="site__mb blok">
-              <a href="" class="site__mb--link"> Контакты</a>
-            </li>
-            <li class="auth__mb">
-              <a href="tel:+380961111111" class="auth__mb--tel">
-                +38 096 111 11 11</a
-              >
-            </li>
-            <li class="auth__mb">
-              <a href="mailto:info@devstudio.com" class="auth__mb--mail"
-                >info@devstudio.com
-              </a>
-            </li>
-          </ul>
-          <ul class="social__mob list">
-            <li class="social_mob">
-              <a class="social_mob--link" href=" ">Twitter</a>
-            </li>
-            <li class="social_mob">
-              <a class="social_mob--link" href=" ">Facebook</a>
-            </li>
-            <li class="social_mob">
-              <a class="social_mob--link" href=" ">LinkedIn</a>
-            </li>
-            <li class="social_mob">
-              <a class="social_mob--link" href=" ">Instagram</a>
-            </li>
-          </ul>
-        </div>
+      </div>
+      <!-- навигация мобильного меню -->
+      <div class="mobile-navigation js-menu-container" id="meny-box">
+        <button
+          class="mobile__navigation--button-close js-close-menu"
+          type="button"
+          aria-label="кнопка открытия мобильного меню"
+          aria-controls="meny-box"
+        >
+          <svg class="mobile__navigation--close" width="40" height="40">
+            <use
+              class="cross-open"
+              href="./images/symbol-defs.svg#icon-mb_close"
+            ></use>
+          </svg>
+        </button>
+        <ul class="mobile-navigation__box list">
+          <li class="site__mb">
+            <a href="./index.html" class="site__mb--link">Студия</a>
+          </li>
+          <li class="site__mb">
+            <a href="./portfolio.html" class="site__mb--link current"
+              >Портфолио</a
+            >
+          </li>
+          <li class="site__mb blok">
+            <a href="" class="site__mb--link"> Контакты</a>
+          </li>
+          <li class="auth__mb">
+            <a href="tel:+380961111111" class="auth__mb--tel">
+              +38 096 111 11 11</a
+            >
+          </li>
+          <li class="auth__mb">
+            <a href="mailto:info@devstudio.com" class="auth__mb--mail"
+              >info@devstudio.com
+            </a>
+          </li>
+        </ul>
+        <ul class="social__mob list">
+          <li class="social_mob">
+            <a class="social_mob--link" href=" ">Twitter</a>
+          </li>
+          <li class="social_mob">
+            <a class="social_mob--link" href=" ">Facebook</a>
+          </li>
+          <li class="social_mob">
+            <a class="social_mob--link" href=" ">LinkedIn</a>
+          </li>
+          <li class="social_mob">
+            <a class="social_mob--link" href=" ">Instagram</a>
+          </li>
+        </ul>
       </div>
     </header>
     <!-- мой контент -->
