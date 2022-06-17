@@ -10,9 +10,13 @@
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
+    justify-content: space-between;
   }
 }
 .tablet__box {
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    margin-bottom: 60px;
+  }
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: center;
@@ -25,15 +29,7 @@
   }
 }
 
-.tablet__form {
-  margin-left: auto;
-}
-
 .footer-contacts {
-  @media screen and (min-width: 768px) and (max-width: 1200px) {
-    margin-bottom: 60px;
-  }
-
   @media screen and (min-width: 1200px) {
     margin-right: 70px;
     // margin-bottom: 60px;
@@ -144,7 +140,10 @@
 
 .futter-label {
   display: block;
-  margin-bottom: 20px;
+
+  @media screen and (max-width: 1200px) {
+    margin-bottom: 20px;
+  }
 }
 
 .button-form-input {

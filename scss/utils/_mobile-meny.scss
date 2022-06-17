@@ -12,7 +12,7 @@
   top: 0;
   z-index: 999;
 
-  padding: 15px;
+  padding: 48px 40px;
   background-color: #fff;
 
   transform: translateX(-100%);
@@ -23,53 +23,33 @@
   transform: translateX(0);
 }
 
-.site__mb {
+.mobile-navigation {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.mob__nav,
+.mob__link {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+// .auth__mb {
+//   font-weight: 500;
+//   line-height: 1.18;
+
+//   letter-spacing: 0.02em;
+// }
+
+.site__mb--link {
+  display: block;
   font-weight: 500;
   font-size: 40px;
-  line-height: 1.16;
-  letter-spacing: 0.02em;
-  margin-bottom: 32px;
-
-  &:last-child {
-    margin-bottom: 0;
-  }
-}
-
-.auth__mb {
-  font-weight: 500;
   line-height: 1.18;
-
   letter-spacing: 0.02em;
+  padding: 16px 0;
 
-  margin-bottom: 32px;
-}
-.site__mb.blok {
-  margin-bottom: 302px;
-}
-.social__mob {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-.social_mob {
-  padding-right: 10px;
-  border-right: 1px solid rgba(33, 33, 33, 0.2);
-  &:last-child {
-    padding-right: 0;
-    border: none;
-  }
-}
-.social_mob--link {
-  text-decoration: none;
-  color: var(--title-text-color);
-
-  &:hover,
-  &:focus {
-    color: var(--accent);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-}
-.site__mb--link {
   @media screen and (max-width: 768px) {
     color: var(--title-text-color);
     text-decoration: none;
@@ -84,12 +64,16 @@
   }
 }
 .auth__mb--mail {
+  display: block;
   font-weight: 500;
   font-size: 24px;
   line-height: 28px;
   letter-spacing: 0.02em;
   text-decoration: none;
   color: var(--primery-text-color);
+
+  padding: 16px 0;
+  margin-bottom: 32px;
   &:hover,
   &:focus {
     color: var(--accent);
@@ -97,12 +81,44 @@
   }
 }
 .auth__mb--tel {
+  display: block;
   font-weight: 500;
   font-size: 34px;
   line-height: 1.8;
   text-decoration: none;
+  padding: 16px 0;
 
   color: #2196f3;
+}
+
+.social__box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.social_mob {
+  // padding: 5px 10px;
+
+  border-right: 2px solid rgba(33, 33, 33, 0.2);
+
+  &:last-child {
+    padding-right: 0;
+    border: none;
+  }
+}
+
+.social_mob--link {
+  padding: 5px 10px;
+  text-decoration: none;
+  color: var(--accent);
+
+  &:hover,
+  &:focus {
+    color: var(--accent);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 // кнопка открытия-закрытия моб меню
 
